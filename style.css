@@ -1,7 +1,3 @@
-@font-face {
-    font-family: "fontePoke";
-    src: url("fonte/KetchumItalic-aOOa.ttf");
-}
 
 @font-face {
     font-family: "fontetext";
@@ -16,44 +12,6 @@
     --text-black: black;
 }
 
-@keyframes nova_animacao {
-
-    0% {
-        background-color: red;
-    }
-
-    10% {
-        background-color: rgb(255, 81, 0);
-    }
-
-    20% {
-        background-color: rgb(238, 255, 0);
-    }
-
-    30% {
-        background-color: rgb(94, 128, 0);
-    }
-
-    40% {
-        background-color: rgb(4, 128, 0);
-    }
-
-    50% {
-        background-color: rgb(0, 128, 107);
-    }
-
-    60% {
-        background-color: rgb(0, 45, 128);
-    }
-
-    70% {
-        background-color: rgb(128, 0, 122);
-    }
-
-    100% {
-        background-color: rgb(128, 0, 0);
-    }
-}
 
 * {
     margin: 0;
@@ -68,34 +26,12 @@
 }
 
 header {
-    display: grid;
-    grid-template-columns: 251px 1fr 1fr;
-
-
-
+  display: flex;
 }
-
-.gif {
-    height: 150px;
-}
-
-.div1 {
-
-    height: 280px;
-    width: 170px;
-    background-color: var(--vermelho-banner);
-    animation-name: nova_animacao;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-}
-
 
 .banner h1 {
     color: var(--amarelo-titulo);
-    margin: 2cm 15.5cm;
+    margin: 2cm 19.1cm;
     font-size: 39pt;
     font-family: "fontePoke";
 
@@ -104,8 +40,8 @@ header {
 #menu {
     background-color: #333;
     color: #fff;
-    padding: 10px;
-    font-family: "fontetext";
+    padding: 9px;
+   
 }
 
 #menu ul {
@@ -148,6 +84,7 @@ header {
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
 
 #duascolum {
@@ -155,14 +92,16 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
-#img1 {
+.img1 {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
 .p1 {
     text-align: center;
     font-size: 29px;
+
 }
 
 /*---------------------------resto-----------------------------*/
@@ -176,7 +115,7 @@ header {
 
 }
 
-#hisimg {
+.hisimg {
     text-align: center;
     margin: 1cm 10cm;
 }
@@ -207,50 +146,6 @@ header {
     margin: 0.4cm 50% 0.4cm 10%;
     border-radius: 10px;
     background-color: #fff;
-
-}
-
-#hisimg1 {
-    text-align: center;
-    margin: 0.5cm;
-    padding: 5px;
-    border: solid #333 1px;
-    border-radius: 10px;
-    width: 140px;
-    height: 140px;
-}
-
-#hisimg2 {
-
-    grid-column: 3;
-    margin: 0.5cm;
-    padding: 5px;
-    border: solid #333 1px;
-    border-radius: 10px;
-    width: 140px;
-    height: 140px;
-}
-
-#cincorow {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-
-
-}
-
-#quatrorow {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-
-
-}
-
-.listnot {
-    list-style-image: url('imagem/pokebola.png');
-    font-family: "fontetext";
-    color: var(--text-black);
-    margin: 0.5cm 5cm;
-    font-size: 12pt;
 
 }
 
@@ -324,7 +219,7 @@ footer {
         margin: 1px 10px;
         text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
     }
-    #hisimg {
+    .hisimg {
         text-align: center;
         margin: 5px 10px;
         
@@ -332,12 +227,12 @@ footer {
     .imghis{
         width: 450px;
     }
-    #hisimg1 {
+    .hisimg1 {
         text-align: center;
         margin: 2px 3px;
         width: 115px;
     }
-    #hisimg2 {
+    .hisimg2 {
 
         grid-column: 3;
         text-align: center;
