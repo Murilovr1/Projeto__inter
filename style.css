@@ -25,15 +25,12 @@
     background-color: var(--vermelho-banner);
 }
 
-header {
-  display: flex;
-}
 
 .banner h1 {
     color: var(--amarelo-titulo);
     margin: 2cm 19.1cm;
     font-size: 39pt;
-    font-family: "fontePoke";
+    font-family: "fontetext";
 
 }
 
@@ -41,7 +38,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 9px;
-   
+
 }
 
 #menu ul {
@@ -119,6 +116,20 @@ header {
     text-align: center;
     margin: 1cm 10cm;
 }
+.imghis {
+    width: 450px;
+}
+.referenciaimg {
+    font-size: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.list {
+    text-align: justify;
+    margin: 1cm 2.5cm;
+}
 
 .Principal1 {
     border: 1px solid black;
@@ -149,43 +160,39 @@ header {
 
 }
 
+.bibliografia {
+    color: rgb(0, 0, 0);
+    line-height: 1.15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 0cm 2cm ;
+}
+
+.bibliografia1 {
+    color: rgb(0, 0, 0);
+    line-height: 1.15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10px 1cm 0cm ;
+}
+
 footer {
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr;
-}
 
-#git {
-    background-color: #000000;
-    text-align: center;
-    font-size: 16px;
-
-
-
-}
-
-.link {
-    color: white;
 }
 
 /*-------------------------------resposividade--------------------------------*/
 @media (max-width: 768px) {
-    header {
-        display: grid;
-        grid-template-columns: 151px 1fr 1fr;
-    }
 
-    .gif {
-        height: 90px;
-    }
 
     .banner {
         height: 200px;
-        width: 515px;
+        width: 767px;
     }
 
     .banner h1 {
-        margin: 70px 70px;
+        margin: 70px 8cm;
         font-size: 29pt;
     }
 
@@ -210,8 +217,15 @@ footer {
         font-size: 28px;
     }
 
-    /*-------------------- historia --------------------*/
+    /*--------------------------pagina---------------------------------*/
     .p2 {
+        .referenciaimg {
+            font-size: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
         font-size: 50px;
         text-align: center;
         font-family: "fontetext";
@@ -219,31 +233,37 @@ footer {
         margin: 1px 10px;
         text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
     }
+
     .hisimg {
         text-align: center;
         margin: 5px 10px;
-        
+
+        .referenciaimg {
+            font-size: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 0, 0);
+        }
     }
-    .imghis{
+
+    .imghis {
         width: 450px;
     }
+
     .hisimg1 {
         text-align: center;
         margin: 2px 3px;
         width: 115px;
     }
+
     .hisimg2 {
 
         grid-column: 3;
         text-align: center;
         margin: 2px 3px;
         width: 115px;
-       
-    }
-    .imghis1{
-        width: 90px;
 
     }
-    
+
 
 }
