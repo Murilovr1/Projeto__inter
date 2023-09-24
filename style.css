@@ -28,10 +28,10 @@
 
 .banner h1 {
     color: var(--amarelo-titulo);
-    margin: 2cm 19.1cm;
+    text-align: center;
+    margin: 2cm 3cm;
     font-size: 39pt;
     font-family: "fontetext";
-
 }
 
 #menu {
@@ -138,7 +138,10 @@
     margin: 0.4cm 50% 0.4cm 10%;
     border-radius: 10px;
     background-color: #fff;
-
+}
+.Principal a{
+    text-decoration: none;
+    color: #121212;
 }
 
 .p3 {
@@ -157,7 +160,7 @@
     margin: 0.4cm 50% 0.4cm 10%;
     border-radius: 10px;
     background-color: #fff;
-
+    text-align: justify;
 }
 
 .bibliografia {
@@ -179,7 +182,11 @@
 footer {
     background-color: black;
     display: grid;
-
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -10px;
+    padding: 0 0 10 0;
 }
 
 /*-------------------------------resposividade--------------------------------*/
@@ -187,12 +194,11 @@ footer {
 
 
     .banner {
-        height: 200px;
-        width: 767px;
+        width: 100%;
     }
 
     .banner h1 {
-        margin: 70px 8cm;
+        margin: 1.8cm 0;
         font-size: 29pt;
     }
 
