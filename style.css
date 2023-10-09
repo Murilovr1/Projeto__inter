@@ -95,14 +95,14 @@
     border-radius: 10px;
 }
 
-.p1 {
+.tituloLink {
     text-align: center;
     font-size: 29px;
 
 }
 
 /*---------------------------resto-----------------------------*/
-.p2 {
+.tituloParagrafo {
     text-align: center;
     font-family: "fontetext";
     color: var(--text-black);
@@ -144,7 +144,7 @@
     color: #121212;
 }
 
-.p3 {
+.conteudo {
     text-align: center;
     font-family: "fontetext";
     color: var(--text-black);
@@ -219,12 +219,12 @@ footer {
         margin: 0.4cm 50% 0.4cm 10%;
     }
 
-    .p1 {
+    .tituloLink {
         font-size: 28px;
     }
 
     /*--------------------------pagina---------------------------------*/
-    .p2 {
+    .tituloParagrafo {
         .referenciaimg {
             font-size: 10px;
             text-align: center;
