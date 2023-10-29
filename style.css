@@ -99,6 +99,9 @@
         clear: none;
         font-size: inherit;
     }
+    .dropdown p{
+        font-size: 16px;
+    }
     .dropdown li a{
         color: white;
         background-color: #333;
@@ -144,7 +147,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: var(--background-black);
-
+    
 }
 
 .Principal {
@@ -244,6 +247,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     margin: 0cm 2cm ;
+    max-width: 80%;
 }
 
 .bibliografia1 {
@@ -265,6 +269,26 @@ footer {
 }
 
 /*-------------------------------resposividade--------------------------------*/
+
+@media (max-width: 1024px) {
+    .tituloParagrafo {
+        margin: 1cm 3cm;
+        font-size: 36pt;
+    }
+    .imghis {
+        max-width: 400px;
+        margin: 1cm 1.6cm;
+    }
+    .hisimg{
+        margin: 0;
+    }
+    p{
+        font-size: 12px;
+    }
+    .conteudo{
+        font-size: 15px;
+    }
+}
 @media (max-width: 768px) {
 
 
@@ -300,12 +324,6 @@ footer {
 
     /*--------------------------pagina---------------------------------*/
     .tituloParagrafo {
-        .referenciaimg {
-            font-size: 10px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgb(0, 0, 0);
-        }
 
         font-size: 50px;
         text-align: center;
@@ -313,6 +331,13 @@ footer {
         color: var(--text-black);
         margin: 1px 10px;
         text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
+    }
+    .tituloParagrafo 
+    .referenciaimg {
+        font-size: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
     }
 
     .hisimg {
@@ -328,7 +353,7 @@ footer {
     }
 
     .imghis {
-        width: 450px;
+        width: 300px;
     }
 
     .hisimg1 {
@@ -347,4 +372,20 @@ footer {
     }
 
 
+}
+
+@media (max-width: 647px) {
+    .dropdown{
+        margin-left: 20px;
+    }
+    .bibliografia{
+        font-size: xx-small;
+    }
+    .imghis{
+        width: 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    
 }
