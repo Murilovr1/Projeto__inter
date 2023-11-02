@@ -251,7 +251,6 @@ footer {
 
 @media (max-width: 768px) {
 
-
     .banner {
         width: 100%;
     }
@@ -332,6 +331,22 @@ footer {
 
     }
 
+    .tituloParagrafo{
+        font-size: 30px;
+        margin: 10px;
+    }
+    .conteudo{
+        font-size: 15px;
+    }
+    figcaption {
+        font-size: smaller;
+    }
+    .list li{
+        font-size: 14px;
+    }
+
+    /*---dropdown---*/
+
     .dropdown {
         width: auto;
         color: white;
@@ -344,7 +359,11 @@ footer {
     }
 
     .dropdown p {
-        font-size: 16px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .dropdown ul{
+        margin-top: 25px;
     }
 
     .dropdown li a {
@@ -385,28 +404,68 @@ footer {
         margin-left: -30%;
     }
 
-    #menu li a:hover {
+    #menu li .some a:hover {
         color: rgba(255, 111, 0, 0);
     }
+
+
 }
 
 @media (max-width: 647px) {
     .dropdown {
         margin-left: 20px;
+        font-size: 12px;
+    }
+
+    nav li{
+        margin-right: 80px;
     }
 
     .bibliografia {
-        font-size: xx-small;
+        font-size: 8px;
+        margin: 0cm 20px;
+        max-width: 80%;
     }
 
-    .imghis {
-        width: 200px;
+    .tituloParagrafo{
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .referenciaimg{
+        font-size: 10px;
+    }
+
+    .conteudo{
+        font-size: 10px;
+    }
+
+    figcaption {
+        font-size: 7px;
+    }
+
+    .list li{
+        font-size: 9px;
+        margin-left: -20px;
+    }
+
+    .imghis{
+        margin-left: 20%;
+    }
+
+    #menu{
+        margin-left: 0px;
+        font-size: 12px
+    }
+
+    .tituloParagrafo{
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 425px) {}
 
-@media (max-width: 325px) {
+@media (max-width: 345px) {
     .banner {
         width: 100%;
     }
@@ -417,7 +476,6 @@ footer {
     }
 
     .div1 {
-
         height: 200px;
         width: 100px;
     }
@@ -438,20 +496,12 @@ footer {
     }
 
     .tituloParagrafo {
-
-        font-size: 50px;
+        font-size: 30px;
         text-align: center;
         font-family: "fontetext";
         color: var(--text-black);
-        margin: 1px 10px;
+        margin: 60px 10px;
         text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
-    }
-
-    .tituloParagrafo .referenciaimg {
-        font-size: 10px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 0, 0);
     }
 
     .hisimg {
@@ -460,7 +510,7 @@ footer {
     }
 
     .referenciaimg {
-        font-size: 10px;
+        font-size: 9px;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(0, 0, 0);
@@ -468,7 +518,7 @@ footer {
 
 
     .imghis {
-        width: 300px;
+        width: 60%;
     }
 
     .hisimg1 {
@@ -487,28 +537,29 @@ footer {
     }
 
     .dropdown {
-        width: auto;
+        max-width: 50px;
         color: white;
         background-color: #333;
         margin-left: 10px;
-        margin-right: 50%;
+        margin-right: 40%;
         margin-top: 10px;
-        clear: none;
-        font-size: inherit;
     }
 
     .dropdown p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .dropdown li a {
         color: white;
         background-color: #333;
+        font-size: 10px;
     }
 
     #menu ul .some {
         font-size: 0;
         clear: both;
+        width: 0;
+        padding: 0;
     }
 
     /*Menu menor*/
