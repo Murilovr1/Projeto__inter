@@ -18,7 +18,9 @@
     box-sizing: border-box;
 }
 
-/*-----------------------------------Banner---------------------------------------------*/
+/*-------------------------------------------
+                     Banner
+-------------------------------------------*/
 .banner {
     border: 1px solid black;
     background-color: var(--vermelho-banner);
@@ -33,65 +35,7 @@
     font-family: "fontetext";
 }
 
-#menu {
-    background-color: #333;
-    color: #fff;
-    padding: 9px;
 
-}
-
-#menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-#menu li {
-    margin-right: 20px;
-}
-
-#menu li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#menu li a:hover {
-    color: #ff6f00;
-}
-
-/*MENU RESPONSIVE*/
-#menu ul li {
-    display: inline;
-    position: relative;
-}
-
-#menu ul li a {
-    color: var(--cor-primaria);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    transition: background .3s;
-}
-
-#menu ul li a:hover {
-    transition: 0.2s;
-}
-
-#menu ul ul {
-    display: none;
-    left: 0;
-    position: absolute;
-}
-
-.dropdown {
-    width: 0;
-    clear: both;
-    color: #00000000;
-    font-size: 0;
-}
 
 /*--------------------Main pagina 1-----------------------------*/
 .conteiner {
@@ -225,192 +169,6 @@ footer {
 
 /*-------------------------------resposividade--------------------------------*/
 
-@media (max-width: 1024px) {
-    .tituloParagrafo {
-        margin: 1cm 3cm;
-        font-size: 36pt;
-    }
-
-    .imghis {
-        max-width: 400px;
-        margin: 1cm 1.6cm;
-    }
-
-    .hisimg {
-        margin: 0;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    .conteudo {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .banner {
-        width: 100%;
-    }
-
-    .banner h1 {
-        margin: 1.8cm 0;
-        font-size: 29pt;
-    }
-
-    .div1 {
-
-        height: 200px;
-        width: 100px;
-    }
-
-    #duascolum {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .Principal {
-        min-height: 100px;
-        width: 80%;
-        margin: 0.4cm 50% 0.4cm 10%;
-    }
-
-    .tituloLink {
-        font-size: 28px;
-    }
-
-    /*--------------------------pagina---------------------------------*/
-    .tituloParagrafo {
-
-        font-size: 50px;
-        text-align: center;
-        font-family: "fontetext";
-        color: var(--text-black);
-        margin: 1px 10px;
-        text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
-    }
-
-    .tituloParagrafo .referenciaimg {
-        font-size: 10px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 0, 0);
-    }
-
-    .hisimg {
-        text-align: center;
-        margin: 5px 10px;
-    }
-
-    .referenciaimg {
-        font-size: 10px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 0, 0);
-    }
-
-
-    .imghis {
-        width: 300px;
-    }
-
-    .hisimg1 {
-        text-align: center;
-        margin: 2px 3px;
-        width: 115px;
-    }
-
-    .hisimg2 {
-
-        grid-column: 3;
-        text-align: center;
-        margin: 2px 3px;
-        width: 115px;
-
-    }
-
-    .tituloParagrafo{
-        font-size: 30px;
-        margin: 10px;
-    }
-    .conteudo{
-        font-size: 15px;
-    }
-    figcaption {
-        font-size: smaller;
-    }
-    .list li{
-        font-size: 14px;
-    }
-
-    /*---dropdown---*/
-
-    .dropdown {
-        width: auto;
-        color: white;
-        background-color: #333;
-        margin-left: 10px;
-        margin-right: 50%;
-        margin-top: 10px;
-        clear: none;
-        font-size: inherit;
-    }
-
-    .dropdown p {
-        font-size: 17px;
-        margin-bottom: 10px;
-    }
-    .dropdown ul{
-        margin-top: 25px;
-    }
-
-    .dropdown li a {
-        color: white;
-        background-color: #333;
-    }
-
-    #menu ul .some {
-        font-size: 0;
-        clear: both;
-    }
-
-    /*Menu menor*/
-    #menu ul li:hover ul {
-        display: block;
-    }
-
-    #menu ul ul {
-        width: 150px;
-    }
-
-    #menu ul ul li a {
-        display: block;
-    }
-
-    #menu ul ul li a:hover {
-        transition: 0.3s;
-        color: #ff6f00;
-    }
-
-    .some {
-        width: 0;
-        color: #00000000;
-        padding: 0;
-    }
-
-    .menuDropdown {
-        margin-left: -30%;
-    }
-
-    #menu li .some a:hover {
-        color: rgba(255, 111, 0, 0);
-    }
-
-
-}
-
 @media (max-width: 647px) {
     .dropdown {
         margin-left: 20px;
@@ -463,9 +221,7 @@ footer {
     }
 }
 
-@media (max-width: 425px) {}
-
-@media (max-width: 345px) {
+@media (max-width: 380px) {
     .banner {
         width: 100%;
     }
@@ -510,7 +266,7 @@ footer {
     }
 
     .referenciaimg {
-        font-size: 9px;
+        font-size: 11px;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(0, 0, 0);
@@ -537,62 +293,5 @@ footer {
 
     }
 
-    .dropdown {
-        max-width: 50px;
-        color: white;
-        background-color: #333;
-        margin-left: 10px;
-        margin-right: 40%;
-        margin-top: 10px;
-    }
-
-    .dropdown p {
-        font-size: 12px;
-    }
-
-    .dropdown li a {
-        color: white;
-        background-color: #333;
-        font-size: 10px;
-    }
-
-    #menu ul .some {
-        font-size: 0;
-        clear: both;
-        width: 0;
-        padding: 0;
-    }
-
-    /*Menu menor*/
-    #menu ul li:hover ul {
-        display: block;
-    }
-
-    #menu ul ul {
-        width: 150px;
-    }
-
-    #menu ul ul li a {
-        display: block;
-    }
-
-    #menu ul ul li a:hover {
-        transition: 0.3s;
-        color: #ff6f00;
-    }
-
-    .some {
-        width: 0;
-        color: #00000000;
-        padding: 0;
-    }
-
-    .menuDropdown {
-        margin-left: -30%;
-    }
-
-    #menu li a:hover {
-        color: rgba(255, 111, 0, 0);
-    }
 
 }
